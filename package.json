@@ -9,7 +9,7 @@
     "start-dev": "nodemon server.js"
   },
   "engines": {
-    "node": "16.14.2"
+    "node": "16.x"
   },
   "author": "Anis,Adnane,Aymen",
   "license": "ISC",
