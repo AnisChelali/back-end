@@ -1,0 +1,24 @@
+{
+  "name": "data-cleaning",
+  "version": "1.0.0",
+  "description": "project data-cleaning",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Anis,Adnane,Aymen",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.14",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.5",
+    "validator": "^13.7.0"
+  }
+}
