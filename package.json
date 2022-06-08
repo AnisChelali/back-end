@@ -4,7 +4,8 @@
   "description": "project data-cleaning",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "npm install && nodejs server.js",
+    "start-dev": "nodemon server.js"
   },
   "author": "Anis,Adnane,Aymen",
   "license": "ISC",
