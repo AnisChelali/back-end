@@ -4,8 +4,8 @@
   "description": "project data-cleaning",
   "main": "app.js",
   "scripts": {
-    "prestart": "npm install ",
-    "start": "nodejs server.js",
+    "heroku-prebuild": "npm install",
+    "start": "node server.js",
     "start-dev": "nodemon server.js"
   },
   "engines": {
