@@ -5,6 +5,16 @@ const authController = require("./../controllers/authController");
 
 const router = express.Router();
 
-router.route("/").post(authController.protect, homeController.saveImages);
+router.route("/").get(authController.protect, homeController.getImages);
+router
+  .route("/annotation")
+  .post(authController.protect, homeController.changeImageStatus);
+
+router
+  .route("/clean")
+  .post(authController.protect, homeController.saveGroupImages);
+router
+  .route("/unclean")
+  .post(authController.protect, homeController.saveGroupImages);
 
 module.exports = router;

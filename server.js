@@ -10,7 +10,10 @@ process.on("uncaughtException", (err) => {
 
 const app = require("./app");
 
-const DB = process.env.DATABASE_LOCAL;
+const DB = process.env.DATABASE_REMOTE.replace(
+  "<PASSWORD>",
+  process.env.ATLAS_PASSWORD
+);
 
 mongoose
   .connect(DB, {
