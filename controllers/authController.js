@@ -34,10 +34,6 @@ const createSendToken = (user, statusCode, res) => {
 };
 
 exports.signup = catchAsync(async (req, res, next) => {
-  // //why it doesn't work ??????????
-  // const code = +req.body.invitationCode;
-  // const inviteCode = await Code.findOne({ invitationCode: code });
-  // if (!inviteCode)
   if (req.body.invitationCode != "12345")
     return next(new appError("please provide a valid invitation code", 401));
 
@@ -196,3 +192,7 @@ exports.updateProfile = catchAsync(async (req, res, next) => {
     },
   });
 });
+
+// const code = +req.body.invitationCode;
+// const inviteCode = await Code.findOne({ invitationCode: code });
+// if (!inviteCode)
